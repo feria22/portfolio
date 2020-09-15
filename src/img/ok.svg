@@ -1,0 +1,11 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com" width='20' height='20'>
+  <defs>
+    <linearGradient id="gradient-0" bx:pinned="true">
+      <stop offset="0.193" style="stop-color: rgb(47, 99, 93);"></stop>
+      <stop offset="0.904" style="stop-color: rgb(31, 212, 197);"></stop>
+    </linearGradient>
+  </defs>
+
+    <path d="m11.034 257.27c-6.764-19.214 105.07 35.507 134.9 26.322 30.957-16.62 239.93-276.23 279.41-267.6-22.685 46.609-241.95 369.09-254.11 401.01-21.846 13.334-128.24-86.97-160.19-159.73z" fill-rule="evenodd"  style="fill: url(#gradient-0);"></path>
+
+</svg>
