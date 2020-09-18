@@ -12,7 +12,7 @@ let Info = {
     have: ['zaangażowanie w programowaniu','wyksztalcenie wyższe oraz w zakresie IT','prawo jazdy kategorii B'],
     donthave: ['problemów z legalizacją w Polsce, mam kartę czasowego pobytu. Nie potrzebuję zezwolenie na pracę'],
     know: ['główne technologie Front-endu','PHP i SQL, oraz NoSQL','język polski, rosyjski, ukraiński oraz angielski'],
-    can:['wszystko. A czego nie potrafię, znajdzie w Internecie jak to się robi ']
+    can:['wszystko. A czego nie potrafię, znajduję w Internecie jak to się robi ']
   },
   tech: {
     csshtml: [
@@ -26,7 +26,7 @@ let Info = {
   links: [
     {
       link: "Start",
-      adres: "home"
+      adres: ""
     },
     {
       link: "O mnie",
