@@ -83,17 +83,24 @@ main{
 }
 article{
   width: 90vw;
-  padding-bottom: 70px;
-  margin: 30px;
+  margin-bottom: 70px;
+  margin-top: 30px;
+  position: static;
+  left: -130px;
+  z-index:2;
 }
 
 .photo{
+  position: fixed;
+  top: 70px;
+  right: 0px;
   background-image: url("img/viktoriia_aqua-min.png");
   background-position: 20% 0;
   background-repeat: no-repeat;
   width: 500px;
   height: 680px;
   display: none;
+  z-index:0;
 }
 .contacts-list{
   min-width: 50vw;
@@ -148,6 +155,80 @@ span:last-child{
   justify-content: space-between;
 }
 
+  .projects--box{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    width:  600px;
+    height:  500px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+      padding: 40px;
+      color: $lightgrey;
+    }
+    img {
+      display: block;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      }
+
+    .projects--box_overlay{
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: #04534ef7;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      transition: .45s ease-in-out;
+        } 
+
+  &:hover{
+    .projects--box_overlay{
+      display: flex;
+      opacity: 1;
+       }
+  }
+}
+.button {
+	box-shadow: 3px 6px 0px 0px #216c8a;
+	background:linear-gradient(to bottom, $dark 5%, $grey 100%);
+	background-color:#0d1a36;
+	border-radius:12px;
+	border:1px solid #98dfe0;
+	display:inline-block;
+	cursor:pointer;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #0f0e0e;
+  a{
+    color:$lightgrey;
+  }
+}
+.button:hover {
+	background:linear-gradient(to bottom, $dark  5%, $grey 100%);
+	background-color:$turquoise;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
 @media (max-width: 575.98px) {
   h2{
     font-size:  1.8rem;;
@@ -184,6 +265,13 @@ span:last-child{
     nav .flex-container{
       flex-direction: row;
       }
+      .projects--box{
+        width:  calc(600px / 2);
+        height:  calc(500px  / 2);
+        div{
+          padding: 15px;
+        }
+      }
 }
 
 
@@ -192,6 +280,10 @@ span:last-child{
     top:30%;
     font-size: 1rem;
   }
+  .projects--box{
+    width:  calc(600px * 2 / 3);
+    height:  calc(500px * 2 / 3);
+  }
   }
 @media (min-width: 992px) {
   .photo{
@@ -199,5 +291,6 @@ span:last-child{
   } 
   article{
     width: calc(100vw - 600px);
+    position: relative;
   }
 }

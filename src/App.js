@@ -7,6 +7,7 @@ import Educations from './Components/Educations';
 import Contacts from './Components/Contacts';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { withRouter } from "react-router";
+import Projects from './Components/Projects';
 
 
 
@@ -52,7 +53,7 @@ class App extends Component {
           <Navigation links={this.props.info.links} />
         </nav>
         <Switch>
-          <Route exact path='/'>
+          <Route exact path='/home'>
             <Header contacts={this.props.info.contacts} />
           </Route>
           <Route exact path={this.linksForNotHome}>
@@ -70,6 +71,9 @@ class App extends Component {
                   <Route exact path='/educations' >
                     <Educations educations={this.props.info.educations} />
                   </Route>
+                  <Route exact path='/projects' >
+                    <Projects projects={this.props.info.projects} />
+                  </Route>
                   <Route exact path='/contacts' >
                     <Contacts contacts={this.props.info.contacts} />
                   </Route>
@@ -80,7 +84,7 @@ class App extends Component {
               <div className="photo" />
             </main>
           </Route>
-          <Redirect from='*' to='/' />
+          <Redirect from='/*' to='/home' />
         </Switch>
 
       </React.Fragment>

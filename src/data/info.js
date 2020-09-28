@@ -1,4 +1,4 @@
-let Info = {
+const Info = {
   contacts: {
     name: "Viktoriia",
     surname: "Popovych",
@@ -26,7 +26,7 @@ let Info = {
   links: [
     {
       link: "Start",
-      adres: ""
+      adres: "home"
     },
     {
       link: "O mnie",
@@ -39,6 +39,10 @@ let Info = {
     {
       link: "Wykształcenie",
       adres: "educations"
+    },
+    {
+      link: "Proekty",
+      adres: "projects"
     },
     {
       link: "Kontakt",
@@ -95,7 +99,29 @@ let Info = {
     ]
 
 
-  }
+  },
+  projects: [
+    {
+      img:"event",
+      info: " RWD, Bootstrap, SCSS, HTML, JavaScript",
+      link:"https://feria22.github.io/event-meetup/"
+    },
+    {
+      img:"shop",
+      info: " Angular, TypeScript, HTML, SCSS",
+      link:"https://feria22.github.io/shop/"
+    },
+    {
+      img:"todo",
+      info: " Angular, TypeScript, HTML, Materialize, SCSS",
+      link:"https://feria22.github.io/todo/"
+    },
 
+    {
+      img:"portfolio",
+      info: " React, SCSS, JSX, JavaScript",
+      link:"https://feria22.github.io/"
+    },
+  ]
 }
 export default Info
